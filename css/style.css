@@ -28,8 +28,8 @@ body {
 }
 
 #contact-upper-container img {
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
   margin: 10px;
 }
 
@@ -42,6 +42,7 @@ body {
   background-color: #ffffff;
   align-items: center;
   justify-content: center;
+  text-transform: capitalize;
   padding: 10px;
 }
 #navigation-img {
@@ -50,7 +51,7 @@ body {
 }
 #navigation-img > img {
   margin-right: 150px;
-  width: 100px;
+  width: 120px;
 }
 #navigation-links > a {
   text-decoration: none;
@@ -68,7 +69,7 @@ body {
   background: url("../img/main.avif");
   background-repeat: no-repeat;
   background-position: center;
-  /* background-size: cover; */
+  background-size: cover;
   height: 350px;
   display: flex;
   align-items: center;
@@ -99,8 +100,9 @@ body {
   border: none;
   color: #fff;
   margin-top: 40px;
-  padding: 10px;
-  width: 120px;
+  padding: 15px;
+  font-size: 15px;
+  width: 180px;
   text-transform: uppercase;
 }
 #welcome-txt button:hover {
@@ -129,6 +131,7 @@ body {
   opacity: 1.5;
   width: 75%;
   padding: 20px;
+  margin-bottom: 20px;
 }
 #veneer-txt {
   color: #fff;
@@ -144,10 +147,13 @@ body {
   font-size: 16px;
 }
 #veneer-inner-txt {
-  margin-right: 95px;
+  margin-right: 205px;
+}
+#veneer-inner-txt > h3 {
+  font-size: 40px;
 }
 #veneer-image > img {
-  width: 250px;
+  width: 350px;
   height: 250px;
 }
 
@@ -167,11 +173,12 @@ body {
   margin: 0 auto;
   text-align: center;
   align-items: center;
-  gap: 20px;
+  gap: 40px;
+  margin-bottom: 20px;
 }
 #wood-txt,
 #btn-container {
-  margin-left: 90px;
+  margin-left: 220px;
 }
 #wood-txt > h1 {
   color: #711e1e;
@@ -184,10 +191,11 @@ body {
   outline: none;
   border: none;
   color: #fff;
-  padding: 10px;
-  width: 120px;
+  padding: 12px;
+  width: 160px;
   margin-top: 25px;
   margin-bottom: 40px;
+  font-size: 15px;
 }
 #btn-container button:hover {
   background-color: #0c0a0a63;
@@ -330,7 +338,7 @@ footer {
 }
 
 /* mobile responsive */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 720px) {
   #contact-upper-container {
     display: flex;
     flex-direction: column;
@@ -415,7 +423,7 @@ footer {
   }
   #veneer-txt > p {
     font-weight: 100;
-    font-size: 16px;
+    font-size: 8px;
     margin-bottom: 10px;
   }
   #veneer-inner-txt {
@@ -425,7 +433,9 @@ footer {
     width: 150px;
     height: 150px;
   }
-
+  #veneer-inner-txt > h3 {
+    font-size: 20px;
+  }
   #wood-container {
     display: flex;
     justify-content: center;
@@ -580,3 +590,7 @@ footer {
     cursor: pointer;
   }
 }
+
+/* @media screen and (max-width: 720px) {
+  
+} */
